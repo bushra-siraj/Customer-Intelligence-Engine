@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from PIL import Image
+import requests
 
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="ShopAnalyzer AI", page_icon="📈", layout="wide")
@@ -116,3 +117,4 @@ elif menu == "🎯 Personal Recommendations":
     items they haven't discovered yet, but are mathematically likely to purchase.
 
     """)
+
