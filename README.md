@@ -13,7 +13,7 @@ This project applies advanced **Unsupervised Learning** techniques to a dataset 
 
 #### **Task 2 & 4: Segmentation & PCA**
 * **Method:** K-Means Clustering + Principal Component Analysis.
-* **Observation:** We identified **4 distinct personas**. Using PCA, we reduced the data to two dimensions while maintaining **96.01% of the original variance**.
+* **Observation:** I identified **4 distinct personas**. Using PCA, we reduced the data to two dimensions while maintaining **96.01% of the original variance**.
 * **Segments:** 💎 VIPs, 🔄 Loyalists, 🌱 Newcomers, and ⚠️ At-Risk shoppers.
 
 #### **Task 3: Anomaly Detection**
@@ -28,7 +28,7 @@ This project applies advanced **Unsupervised Learning** techniques to a dataset 
 
 ### **📊 Analysis & Reflection (Task 6)**
 * **Hidden Patterns:** Unsupervised learning revealed that a customer's value is the relationship between visit frequency and total monetary value.
-* **Comparison:** * **Clustering** provides the **Strategy**.
+* **Comparison:** **Clustering** provides the **Strategy**.
     * **Anomalies** provide the **Security**.
     * **PCA** provides the **Clarity**.
     * **Collaborative Filtering** provides the **Revenue**.
@@ -47,3 +47,6 @@ This project applies advanced **Unsupervised Learning** techniques to a dataset 
 * **Name:** **Bushra Siraj**
 * **Email:** **[BushraSiraj586@gmail.com]**
 * **Linkedin:** **[www.linkedin.com/in/bushrasiraj]**
+
+<img width="944" height="445" alt="Screenshot 2026-02-20 041736" src="https://github.com/user-attachments/assets/c44c9244-8f82-4a20-922f-15d0e230738e" />
+
