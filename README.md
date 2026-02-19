@@ -3,6 +3,8 @@
 ### **Project Overview**
 This project applies advanced **Unsupervised Learning** techniques to a dataset of **1.06 Million** e-commerce transactions. The goal is to move beyond basic reporting and uncover hidden customer behaviors, identify high-risk anomalies, and build an automated recommendation engine.
 
+**Visit shopAnalyzer AI website here:** **[https://customer-intelligence-engine.streamlit.app/]**
+
 ---
 
 ### **🚀 Key Features & Task Breakdown**
