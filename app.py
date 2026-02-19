@@ -21,9 +21,20 @@ st.markdown("""
 st.title("🛍️ ShopAnalyzer AI: Unsupervised Insights")
 st.markdown("---")
 
+# 1. Function to load Lottie URL
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+# 2. Select a creative animation (Shopping/Data theme)
+lottie_shopping = load_lottieurl("https://lottie.host/ed1e030e-223e-4dc8-93e9-6a475ba4a0e1/xFcssUBraD.json")
+
 # --- SIDEBAR ---
 with st.sidebar:
     st.header("Project Navigation")
+    st_lottie(lottie_shopping, speed=1, height=200, key="initial")
     menu = st.radio("Select View", ["🏠 Dashboard Home", "👥 Customer Clusters", "🚨 Anomaly Report", "🎯 Personal Recommendations"])
     st.markdown("---")
     st.info("\n**Data:** Online Retail II")
@@ -103,4 +114,5 @@ elif menu == "🎯 Personal Recommendations":
     st.markdown("""
     **💡 Marketing Insight:** These recommendations help reduce 'Churn' by showing the customer 
     items they haven't discovered yet, but are mathematically likely to purchase.
+
     """)
