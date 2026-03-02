@@ -5,6 +5,8 @@ import seaborn as sns
 from PIL import Image
 import requests
 from streamlit_lottie import st_lottie
+import json
+import os
 
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="ShopAnalyzer AI", page_icon="📈", layout="wide")
@@ -24,19 +26,16 @@ st.title("🛍️ ShopAnalyzer AI: Unsupervised Insights")
 st.markdown("---")
 
 # 1. Function to load Lottie URL
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+def load_lottiefile(filepath: str):
+    with open(filepath, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 # 2. Select a creative animation (Shopping/Data theme)
-lottie_shopping = load_lottieurl("https://lottie.host/ed1e030e-223e-4dc8-93e9-6a475ba4a0e1/xFcssUBraD.json")
-
+lottie_anim = load_lottiefile("animation.json")
 # --- SIDEBAR ---
 with st.sidebar:
     st.header("Project Navigation")
-    st_lottie(lottie_shopping, speed=1, height=200, key="initial")
+    st_lottie(lottie_anim, speed=1, height=200, key="initial")
     menu = st.radio("Select View", ["🏠 Dashboard Home", "👥 Customer Clusters", "🚨 Anomaly Report", "🎯 Personal Recommendations"])
     st.markdown("---")
     st.info("\n**Data:** Online Retail II")
